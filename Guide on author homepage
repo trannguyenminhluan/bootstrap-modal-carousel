@@ -1,0 +1,29 @@
+Purpose
+The bootstrap-carousel-fit.js and bootstrap-carousel-fit.css package center the carousel slides and fit their captions according to the image width.
+
+The caption effects are controlled by CSS with 3 possible cases you can set by choosing the element class :
+
+display caption when active : .carousel-caption-active
+display caption on hover : .carousel-caption-hover
+hide caption on hover : .carousel-caption-hide
+
+Code
+Add the class name .carousel-fit to the carousel element to have the caption fitted.
+You can also add one of the three class names .carousel-caption-active, .carousel-caption-hover or .carousel-caption-hide to the carousel element to add some effects to the captions.
+<div id="myCarousel" class="carousel slide carousel-fit carousel-caption-hover">
+	<!-- Carousel items -->
+	<div class="carousel-inner"></div>
+	<!-- Carousel nav -->
+	<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+	<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
+CSS
+<link href="../components/bootstrap/docs/assets/css/bootstrap.css" rel="stylesheet" />
+<link href="../components/bootstrap/docs/assets/css/bootstrap-responsive.css" rel="stylesheet" />
+<link href="css/bootstrap-carousel-fit.css" rel="stylesheet" />
+
+JS
+<script src="../components/bootstrap/docs/assets/js/jquery.js"></script>
+<script src="../components/bootstrap/docs/assets/js/bootstrap.js"></script>
+<script src="js/bootstrap-carousel-fit.js"></script>
